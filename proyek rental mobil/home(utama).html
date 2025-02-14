@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Mobil</title>
     <style>
-        /* Reset */
+        
         body,
         h1,
         h2,
@@ -32,7 +32,7 @@
             margin: 0 auto;
         }
 
-        /* Header */
+        
         .header {
             background-color: orange;
             color: white;
@@ -52,7 +52,7 @@
             text-transform: uppercase;
         }
 
-        /* Contact Section */
+        
         .contact {
             text-align: center;
             margin: 10px;
@@ -61,7 +61,7 @@
             gap: 15px;
         }
 
-        /* Tombol "Reservasi Online" */
+        
         .contact a.btn-reservasi {
             color: white;
             background-color: darkorange;
@@ -79,7 +79,7 @@
             transform: translateY(-2px);
         }
 
-        /* Styling untuk link telepon */
+        
         .phone-link {
             color: white;
             font-weight: bold;
@@ -93,14 +93,14 @@
             color: #ffcc66;
         }
 
-        /* Menambah jarak antara teks dan tombol */
+        
         .contact p {
             font-size: 16px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
 
-        /* Navbar */
+        
         .nav {
             background-color: darkorange;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -142,7 +142,7 @@
             color: darkorange;
         }
 
-        /* Hero Section */
+        
         .hero {
             background: linear-gradient(orange, darkorange);
             color: white;
@@ -199,7 +199,7 @@
             color: darkorange;
         }
 
-        /* Features Section */
+        
         .features {
             background-color: #fff;
             padding: 50px 0;
@@ -241,7 +241,7 @@
             background-color: #ffcc66;
         }
 
-        /* About Section */
+        
         .about {
             padding: 50px 0;
             background-color: #f9f9f9;
@@ -267,7 +267,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Footer */
+        
         .footer {
             background-color: #333;
             color: white;
@@ -308,7 +308,7 @@
             background-color: #ffcc66;
         }
 
-        /* Styling for button list */
+        
         .button-list {
             display: flex;
             flex-wrap: wrap;
@@ -341,7 +341,7 @@
             outline: none;
         }
 
-        /* Styling for description */
+        
         .description {
             background-color: #fff;
             padding: 30px;
@@ -422,7 +422,7 @@
             color: #333;
         }
 
-        /* Reset Default Styling */
+        
         body,
         html {
             margin: 0;
@@ -430,7 +430,7 @@
             box-sizing: border-box;
         }
 
-        /* Navbar Styling */
+        
         .nav {
             background-color: darkorange;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -480,7 +480,7 @@
             color: darkorange;
         }
 
-        /* Reservasi Online Button */
+        
         .nav-menu li a.btn-reservasi {
             background-color: white;
             color: darkorange;
@@ -497,7 +497,7 @@
             border-color: white;
         }
 
-        /* Logout Button */
+        
         .nav-menu li a.btn-logout {
             background-color: red;
             color: white;
@@ -512,7 +512,7 @@
             transform: translateY(-2px);
         }
 
-        /* Responsive Media Queries */
+        
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
@@ -730,14 +730,14 @@
 
     <script>
         function showSection(sectionId) {
-            const sections = ['utama', 'layanan', 'jenisMobil'];
+            var sections = ['utama', 'layanan', 'jenisMobil'];
             sections.forEach(id => {
                 document.getElementById(id).style.display = id === sectionId ? 'block' : 'none';
             });
         }
 
         function showDescription(service) {
-            const descriptions = {
+            var descriptions = {
                 pickup: "Dengan layanan sewa mobil pick up dan drop off dari RentalMobil.com, Anda tidak perlu repot mencari kendaraan. Kami siap menjemput Anda di lokasi yang Anda tentukan dan mengantarkan Anda ke tujuan dengan nyaman. Kami memastikan perjalanan Anda dimulai dan berakhir dengan lancar, tanpa khawatir tentang transportasi.",
                 dalamKota: "Sewa mobil dalam kota memberikan kenyamanan tanpa batas, dengan berbagai pilihan kendaraan yang dapat disesuaikan dengan kebutuhan Anda. Supir kami tidak hanya sopan, terlatih, dan berkemampuan mengemudi dengan baik; mereka juga mengetahui area sekitar dengan sangat detail, sehingga Anda dapat menikmati perjalanan yang efisien dan bebas stres.",
                 luarKota: "RentalMobil.com juga menawarkan layanan sewa mobil untuk perjalanan ke luar kota Jakarta. Anda dapat menikmati perjalanan yang aman, nyaman, dan tidak terganggu. Kendaraan kami telah dilengkapi dengan fasilitas terbaik untuk memastikan kenyamanan sepanjang perjalanan jarak jauh Anda. Percayakan perjalanan luar kota Anda bersama kami!",
@@ -746,7 +746,7 @@
                 tourPackages: "Dengan paket wisata kami, Anda bisa menjelajahi berbagai destinasi menarik dengan kendaraan terbaik dan supir berpengalaman yang tahu jalur wisata terbaik. Kami menyediakan berbagai pilihan paket wisata yang dapat disesuaikan dengan minat Anda, mulai dari wisata alam, sejarah, hingga tur kota. Rasakan pengalaman wisata yang tak terlupakan dengan RentalMobil.com."
             };
 
-            const descriptionElement = document.getElementById("description");
+            var descriptionElement = document.getElementById("description");
             descriptionElement.innerHTML = `<p>${descriptions[service]}</p>`;
         }
     </script>
